@@ -235,7 +235,6 @@ sequenceDiagram
 
 ```mermaid
 erDiagram
-    %% Entities
     Users {
         int id PK
         string email
@@ -244,7 +243,7 @@ erDiagram
         string branch
         datetime created_at
     }
-    
+
     Tests {
         int id PK
         int admin_id FK
@@ -255,7 +254,7 @@ erDiagram
         string status
         datetime created_at
     }
-    
+
     Questions {
         int id PK
         int test_id FK
@@ -263,14 +262,14 @@ erDiagram
         int marks
         int correct_option
     }
-    
+
     Options {
         int id PK
         int question_id FK
         string option_text
         int option_number
     }
-    
+
     Results {
         int id PK
         int user_id FK
@@ -278,18 +277,13 @@ erDiagram
         int score
         datetime submitted_at
     }
-    
-    %% Relationships
-    Users ||--o{ Tests : creates
-    Tests ||--o{ Questions : contains
-    Questions ||--o{ Options : has
-    Users ||--o{ Results : takes
-    Tests ||--o{ Results : has
-    Questions ||--o{ Results : answers
-    
-    %% Styling
-    classDef entity fill:#f9f,stroke:#333,stroke-width:2px;
-    class Users,Tests,Questions,Options,Results entity;
+
+    Users ||--o{ Tests
+    Tests ||--o{ Questions
+    Questions ||--o{ Options
+    Users ||--o{ Results
+    Tests ||--o{ Results
+
 ```
 
 ## Database Structure (Simple Explanation)
