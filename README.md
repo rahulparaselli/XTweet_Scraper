@@ -29,7 +29,7 @@ Based on the `mine.py` file, the following modules are used:
 *   VS Code (indicated by `.vscode/settings.json`)
 
 ## Workflow Flowchart
-''' mermaid
+ mermaid
 graph TD
     A[Start] --> B{Select File};
     B --> C{Choose Operation};
@@ -44,7 +44,7 @@ graph TD
     K --> L[Save Decrypted File];
     L --> H;
     I -->|No| B;
-'''
+
 
 
 ## Credits
