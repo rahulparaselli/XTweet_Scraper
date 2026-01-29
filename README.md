@@ -30,22 +30,26 @@ Based on the `mine.py` file, the following modules are used:
 
 ## Workflow Flowchart
  mermaid
-graph TD
-    A[Start] --> B{Select File};
-    B --> C{Choose Operation};
-    C --> D[Encrypt];
-    C --> E[Decrypt];
-    D --> F[Generate Key];
-    F --> G[Save Encrypted File & Key File];
-    G --> H[End];
-    E --> I{Is file .enc?};
-    I -->|Yes| J[Select Key File];
-    J --> K[Decrypt File];
-    K --> L[Save Decrypted File];
-    L --> H;
-    I -->|No| B;
-
-
+mindmap
+  root((Skin Cancer Crisis))
+    Burden
+      Rising Incidence
+      High Mortality (Late Stage)
+      Economic Cost
+    Diagnostic Challenges
+      Subjectivity
+      Expert Shortage
+      Visual Similarity
+    Current Workflow
+      Visual Inspection
+      Dermoscopy
+      Biopsy (Invasive)
+    Solution Need
+      Automated
+      Objective
+      Non-Invasive
+      Accessible
+      
 
 ## Credits
 
