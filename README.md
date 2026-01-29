@@ -29,7 +29,7 @@ Based on the `mine.py` file, the following modules are used:
 *   VS Code (indicated by `.vscode/settings.json`)
 
 ## Workflow Flowchart
- mermaid
+mermaid
 mindmap
   root((Skin Cancer Crisis))
     Burden
